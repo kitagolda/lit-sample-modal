@@ -111,3 +111,9 @@ export class TryOnModal extends LitElement {
     `;
   }
 }
+
+declare global {
+  interface HTMLElementTagNameMap {
+    "try-on-modal": TryOnModal;
+  }
+}
