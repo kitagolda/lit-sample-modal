@@ -8,7 +8,7 @@ import { SAMPLE_MODAL_STYLES } from "./styles";
 export class TryOnModal extends LitElement {
   @property({ type: Boolean, reflect: true }) open = false;
 
-  @property({ attribute: false }) onClose: Function | undefined;
+  @property({ type: Object }) onClose = () => {};
 
   static styles = SAMPLE_MODAL_STYLES;
 
